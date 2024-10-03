@@ -9,30 +9,24 @@
 
 2. Clonar el repositorio en tu máquina local:
    
-   
    git clone https://github.com/tu-usuario/curs-javascript-interaccions-HTML.git
    cd curs-javascript-interaccions-HTML
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 3. Configurar Git Flow:
    - Primero, debes tener instalado Git Flow. Si no lo tienes, puedes instalarlo usando:
      
      Para Linux/Mac:
      
-     
      sudo apt-get install git-flow
      
-     <button onclick="copyCode(this)">Copiar código</button>
      
      Para Windows: Debes descargarlo desde [aquí](https://gitflow.github.io/).
 
    - Luego, inicializa el flujo de trabajo:
      
-     
      git flow init
      
-     <button onclick="copyCode(this)">Copiar código</button>
    
    - Utiliza las configuraciones por defecto:
      - Nombre para la rama de desarrollo: `develop`
@@ -48,12 +42,10 @@
 
 5. Hacer commit y push inicial:
    
-   
    git add .
    git commit -m "User1: Inicializando estructura del proyecto con boilerplate"
    git push origin develop
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 ## Paso 2: Usuario 2 - Creación de las secciones Modificar Contenido HTML y Modificar Atributos HTML
 
@@ -61,17 +53,13 @@
 
    Crear feature/contingutHTML:
    
-   
    git flow feature start contingutHTML
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
    Crear feature/atributsHTML:
    
-   
    git flow feature start atributsHTML
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 2. Implementar la sección Modificar Contenido HTML:
    - Crea un ejemplo similar al que mencionas en el link. 
@@ -79,122 +67,96 @@
 
 3. Hacer commit y cerrar la feature:
    
-   
    git add .
    git commit -m "User2: Añadida sección 'Modificar Contenido HTML'"
    git flow feature finish contingutHTML
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 4. Implementar la sección Modificar Atributos HTML:
    - Añade ejemplos de cómo JavaScript puede modificar atributos de elementos HTML, y escribe una explicación del código.
 
 5. Hacer commit y cerrar la feature:
    
-   
    git add .
    git commit -m "User2: Añadida sección 'Modificar Atributos HTML'"
    git flow feature finish atributsHTML
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 6. Push de las nuevas features a develop:
    
-   
    git push origin develop
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 ## Paso 3: Usuario 3 - Implementación de la sección Modificar Estilos CSS
 
 1. Crear la branch feature/estilsCSS:
    
-   
    git flow feature start estilsCSS
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 2. Añadir ejemplos sobre la modificación de estilos CSS:
    - Agrega ejemplos de cómo modificar el estilo de elementos HTML utilizando JavaScript, junto con comentarios y explicaciones del código.
 
 3. Hacer commit y cerrar la feature:
    
-   
    git add .
    git commit -m "User3: Añadida sección 'Modificar Estils CSS'"
    git flow feature finish estilsCSS
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 4. Push de los cambios a develop:
    
-   
    git push origin develop
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 ## Paso 4: Creación de la release v1.0 por el Usuario 3
 
 1. Crear una release:
    
-   
    git flow release start v1.0
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 2. Hacer commit de la release:
    
-   
    git commit -m "User3: Release v1.0 con las features completadas"
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 3. Finalizar y etiquetar la release:
-   
    
    git flow release finish v1.0
    git push origin main --tags
    git push origin develop
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 ## Paso 5: Usuario 1 realiza un hotfix para mejorar la sección de Contenido HTML
 
 1. Crear una branch de hotfix:
    
-   
    git flow hotfix start milloresV_1_0
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 2. Realizar las mejoras necesarias:
    - Mejora en la sección de Modificar Contenido HTML creada por el Usuario 2.
 
 3. Hacer commit y cerrar el hotfix:
    
-   
    git add .
    git commit -m "User1: Mejora en la sección de Contenido HTML"
    git flow hotfix finish milloresV_1_0
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 4. Push de los cambios a main y develop:
-   
    
    git push origin main
    git push origin develop
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 ## Paso 6: Documentación del proceso en gh-pages
 
 1. Crear una nueva branch gh-pages:
    
-   
    git checkout -b gh-pages
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 2. Añadir documentación del proceso:
    - Añade un archivo index.html o README.md con la descripción teórica del proceso de Git y Git Flow.
@@ -202,12 +164,10 @@
 
 3. Push de la branch gh-pages:
    
-   
    git add .
    git commit -m "Documentación del proceso"
    git push origin gh-pages
    
-   <button onclick="copyCode(this)">Copiar código</button>
 
 4. Publicar GitHub Pages:
    - Ve al repositorio en GitHub, a la pestaña "Settings", y en la sección de "GitHub Pages", selecciona la branch gh-pages para que se publique la documentación.
@@ -217,3 +177,4 @@
 1. Crear el proyecto en GitHub:
    - Ve a la pestaña "Projects" del repositorio y crea un nuevo proyecto.
    - Crea columnas para las features (contingutHTML, atributsHTML, estilsCSS) y para el hotfix (milloresV_1_0).
+
